@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <ProgressBar 
+        android:id="@+id/handler_simple_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="10dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        style="@android:style/Widget.ProgressBar.Horizontal" />
+    <SurfaceView 
+        android:id="@+id/handler_simple_display" 
+        android:layout_width="280dip"
+        android:layout_height="280dip"
+        android:layout_marginTop="5dip"
+        android:visibility="visible"/>
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal">
+        <Button 
+            android:id="@+id/handler_simple_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"/>    
+         <Button 
+             android:id="@+id/handler_simple_stop"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Stop"/>    
+    </LinearLayout>
+</LinearLayout>

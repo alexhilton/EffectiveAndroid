@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <ProgressBar 
+        android:id="@+id/async_task_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="15dip"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="100"
+        android:visibility="gone"
+        />
+    <ImageView 
+        android:id="@+id/async_task_displayer"
+        android:layout_width="fill_parent"
+        android:layout_height="340dip"
+        android:gravity="center"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/happy_running_dog"/>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+	    <Button
+	        android:id="@+id/async_task_get_image"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="get the image" />
+	    <Button 
+	        android:id="@+id/asyc_task_abort"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="abort" />
+    </LinearLayout>
+</LinearLayout>

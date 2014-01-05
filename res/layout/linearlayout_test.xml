@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="200dip"
+    android:layout_height="wrap_content"
+    android:background="#aa551922"
+    >
+    <EditText android:id="@+id/edit"
+        android:layout_width="0dip"
+        android:minWidth="10dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:scrollHorizontally="true"
+        android:hint="Find on Page"
+        android:inputType="text"
+        android:layout_marginRight="10dip"/>
+    <TextView android:id="@+id/matches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="?android:attr/textColorPrimary"
+        android:text="这是一片神奇的土地1 of 9 no match la la al"
+        android:maxWidth="30dip"
+        android:visibility="visible"/>    
+</LinearLayout>

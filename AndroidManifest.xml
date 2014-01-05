@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hilton.effectiveandroid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk android:targetSdkVersion="9" android:minSdkVersion="9"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity android:name="com.hilton.effectiveandroid.view.PopupWindowDemo"
+            android:label="Popup window demo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".networks.NetworksTesterActivity"
+            android:label="Networks" >
+        </activity>
+        <activity
+            android:name=".view.DrawPathDemoActivity"
+            android:label="Draw Path Demo" >
+        </activity>
+        <activity
+            android:name=".LinearLayoutTest"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity  android:name=".GridViewActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.GRID_VIEW_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".concurrent.LooperDemoActivity"
+            android:label="Looper Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".concurrent.AsyncTaskDemoActivity"
+            android:label="Async task Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".concurrent.HandlerSimpleDemo"
+            android:label="Handler Simple Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".concurrent.HandlerITCDemo"
+            android:label="Handler ITC Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.DialogDemo"
+            android:label="Dialog Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.ActivityDemo"
+            android:label="Activity Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.AnotherActivity"
+            android:label="Another Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.ResourceTestOne"
+            android:label="Resource one">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.ResourceTestTwo"
+            android:label="Resource two">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.ClientActivity"
+            android:label="Client Activity"
+            android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".os.AsyncTaskDemoActivity"
+            android:label="AsyncTask"
+            android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.FocusSearchActivity"
+            android:label="Focus search"
+            android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".os.AsyncTaskTrapActivity"
+            android:label="AsyncTask Trap"
+            android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <service android:name=".app.RemoteService" android:exported="true" />
+        <service android:name=".app.ServiceDemo" android:exported="false">
+            
+        </service>
+        <receiver android:name=".app.BroadcastReceiverDemo">
+            <intent-filter>
+                <action android:name="android.action.start_broadcastreceiver_demo"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name=".app.ContentProviderDemo"
+            android:authorities="com.hilton.effectiveandroid.app" />
+        <receiver android:name=".ExampleAppWidgetProvider" >
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/example_info" />
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

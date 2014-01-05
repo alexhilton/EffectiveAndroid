@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  <TextView
+    android:id="@+id/text"
+    android:layout_width="80dip"
+    android:layout_height="80dip"
+    android:textColor="#ccaa99dd"
+    android:background="#77221104"
+    android:text="@string/app_name"
+    android:gravity="center"
+    android:layout_gravity="center"
+    />
+</LinearLayout>

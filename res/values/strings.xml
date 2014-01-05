@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, EffectiveAndroidActivity!</string>
+    <string name="app_name">EffectiveAndroid</string>
+    <string name="app_name_helloworld">Hello World</string>
+    <string name="app_name_httpget">Http Get</string>
+    <string name="waiting">Please wait...</string>
+    <string name="post">Post Data</string>
+    <string name="get">Get Data</string>
+    <string name="url_hint">Please input a URL</string>
+    <string name="connect">Connect</string>
+</resources>

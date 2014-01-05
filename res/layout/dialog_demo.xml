@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <Button android:id="@+id/sucking"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sucking dialogging" />
+    <Button 
+        android:id="@+id/better"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Better dialogging" />
+    <Button 
+        android:id="@+id/optional"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Optional dialogging" />
+"</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/lmain"
+    >
+    <Button 
+        android:id="@+id/myButton1" 
+        android:layout_width="100dip" 
+        android:layout_height="50dip" 
+        android:text="显示"/>
+    <Button 
+        android:id="@+id/myButton2" 
+        android:layout_width="100dip" 
+        android:layout_height="50dip" 
+        android:text="隐藏"/>
+</LinearLayout>
